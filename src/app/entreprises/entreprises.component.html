@@ -1,0 +1,9 @@
+<ul class="list-group" *ngIf=entreprises>
+    <li 
+     *ngFor= "let e of entreprises._embedded.entreprises" class="list-group-item">
+        <a style="cursor: pointer;" (click)= "onGetEmployes(e)">
+             {{e.name}} 
+        </a>         
+    </li>    
+
+</ul>

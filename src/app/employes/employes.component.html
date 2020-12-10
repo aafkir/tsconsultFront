@@ -1,0 +1,17 @@
+
+<table *ngIf=employes class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Date d'embauche</th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr *ngFor= "let e of employes._embedded.employes">
+        <td> {{e.firstName}}</td>
+        <td> {{e.lastName}}</td>
+        <td> {{e.hiringDate}}</td>
+    </tr>
+        </tbody>
+</table>
